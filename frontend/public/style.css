@@ -1,0 +1,1890 @@
+#root {
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+
+@font-face {
+    font-family: 'Copperplate-Gothic-Std-29-BC'; /* You can name the font whatever you like */
+    src: url('../src/assets/Copperplate-Gothic-Std-29-BC.ttf') format('truetype'); /* Specify the path to your TTF file */
+  }
+
+
+/* Header styles */
+.headertitle{
+    color: #000;
+    font-family: Antic;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 38px;
+    width: 234px;
+    margin: 0px;
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+body {
+  background-image: linear-gradient(rgb(233, 119, 119), rgb(255, 173, 132));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.containerHeader {
+  display: grid;
+  grid-template-columns: 400px auto 250px;
+  grid-template-rows: 140px;
+  grid-template-areas: 
+    "titleSVG . menuSVG"
+}
+
+.titleSVGdiv{
+  grid-area: titleSVG;
+  display: flex;
+  justify-content: center;
+}
+
+.headerTitleSvgDiv{
+  grid-area: headerSvg;
+  margin-top: 48px;
+  margin-bottom: 46px;
+  width: 40px;
+  height: 46px;
+  flex-shrink: 0;
+}
+.headerTitleDiv{
+  grid-area: headerTitle;
+  width: 250px;
+  height: 40px;
+  margin-top: 48px;
+  margin-bottom: 46px;
+}
+
+.menuSVGcontainer{
+  grid-area:menuSVG;
+}
+
+.menuSVGdiv{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  width: 90px;
+  height: 27px;
+  flex-shrink: 0;
+  margin-top: 58px;
+  margin-bottom: 55px;
+}
+
+/* Header styles */
+
+/* Search styles */
+
+.walletinvitebuttondiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.walletinvitebutton{
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.createinvitegroupdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creategroupbutton{
+  cursor: pointer;
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.groupguestdiv{
+  min-height: 305px;
+}
+
+.inviteguesttext{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 12px;
+}
+
+.inviteguestdiv{
+  width: 378px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px dashed #000;
+  background: rgba(128, 128, 128, 0.20);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.creategrouphr{
+  width: 382.001px;
+  height: 1px;
+  background: #000;
+  border: 0;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.groupmemberinfodiv{
+  margin-top: 6px;
+  min-width: 200px;
+}
+
+.groupmemberinfo{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.groupmemberdiv{
+  margin-top: 10px;
+  display: flex;
+  justify-items: center;
+  width: 378px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: linear-gradient(90deg, #BBDED6 0%, #FAE3D9 100%);
+}
+
+.groupmemberinvitestatusdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.creategroupdiv{
+  margin-top: 13px;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.homehost{
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.myinvitation_line{
+  display: flex; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+
+.homeinvite{
+  width: 447px;
+  min-height: 531px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #FCDDB0;
+  margin-left: 70px;
+}
+
+.startinvitebuttondiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.startinvitebutton{
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.homesignin{
+  display: grid;
+  padding-left: 70px;
+}
+
+.homesigninbutton{
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #E99F9F;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.homecreateaccountbutton{
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.containerSearchContainer{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 140px;
+  margin-bottom: 232px;
+  flex-shrink: 0;
+}
+
+.searchImageDiv{
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.homeWelcome{
+  width: 750px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 145px;
+}
+
+.homeWelcomefont{
+  height: 115px;
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  margin: 0px;
+  padding-left: 70px;
+}
+
+.homeinstructionfont{
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 70px;
+}
+
+.search-form {
+  display: flex; /* Enable horizontal layout */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 10px; /* Add space between the button and the input */
+}
+
+.search-box{
+  margin-top: 5px;
+  width: 375px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 70px;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.search-box::placeholder {
+  text-indent: 10px; /* Adjust margin as needed */
+}
+
+.search-button {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center icon and text vertically */
+  justify-content: center; /* Center the button's content */
+  background: #FFAD84;
+  height: 35px;
+  padding: 0 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button svg {
+  margin-right: 8px; /* Add space between the icon and the text */
+  padding-top: 7px;
+}
+
+.searchButtonText {
+  font-size: 14px; /* Adjust font size as needed */
+  font-family: Antic, sans-serif; /* Use a clean font */
+}
+
+/* Search styles */
+
+/* Features styles */
+@font-face {
+  font-family: 'AnteBlink'; /* You can name the font whatever you like */
+  src: url('../src/assets/AnteBlink.ttf') format('truetype'); /* Specify the path to your TTF file */
+}
+
+.featureContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.featureCard {
+  position: relative;
+  display: inline-block; /* Ensures the div doesn't stretch to full width */
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.featureBackground {
+  position: relative;
+  display: inline-block;
+}
+
+.featureBackground img,
+.featureImage img {
+  display: block;
+}
+
+.featureImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  z-index: 1; /* Ensures the image is above the background */
+}
+
+.featureText {
+  font-family: 'AnteBlink', sans-serif;
+  position: absolute;
+  margin-top: 130px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  z-index: 2; /* Ensures the text is above the image */
+}
+
+
+
+
+/* Features styles */
+
+/* Footer styles */
+
+.footerContainer {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-direction: column;
+}
+
+.horizontal-line {
+  border: 0; /* Removes the default border */
+  height: 1px; /* Sets the height of the line */
+  width: 1200px;
+  background-color: black; /* Sets the color of the line */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.footertextsContainer {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+
+}
+
+.footertexts {
+  margin-left: 130px;
+  margin-right: 150px;
+}
+
+.footerHeader {
+  font-family:'SourceSerif4', sans-serif;
+  font-size: 18px;
+}
+
+.footerItem {
+  font-family:'SourceSerif4', sans-serif;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+/* Footer styles */
+
+/* Partner styles */
+.partner-header {
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.partner-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vendorRegiInstruction{
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 192px;
+}
+
+.vendorRegiInstruction1Div{
+  display: flex;
+  align-items: center;
+}
+
+.vendorRegiInstruction2Div{
+  display: flex;
+  align-items: center;
+}
+
+.vendorRegiInstruction3Div{
+  display: flex;
+  align-items: center;
+}
+
+.rectangle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 96px;
+  border-radius: 5%;
+  height: auto;
+  width: auto;
+  background-color: rgb(252, 221, 176);
+}
+
+.partner-text-onboarding{
+  font-family:'SourceSerif4', sans-serif;
+  font-size: 22px;
+}
+
+.partner-button {
+  margin-top: 20px;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(233, 119, 119);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.partner-button:hover {
+  background-color: rgb(255, 159, 159);
+}
+
+.partner-form-item {
+  margin-left: 70px;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 350px;
+}
+
+.city-postcode-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-postcode-div{
+  width: 250px;
+}
+
+.partner-text {
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.partner-text-min-password {
+  font-family:'Antic', sans-serif;
+  font-size: 13px;
+  margin-top: 3px;
+  color: grey;
+}
+
+.partner-horizontal-line{
+  border: 0; /* Removes the default border */
+  height: 1px; /* Sets the height of the line */
+  width: 100%;
+  background-color: grey; /* Sets the color of the line */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.partner-privacy-policy{
+  color: #000;
+  font-family: Antic;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  }
+
+.partner-text-login{
+  font-family:'SourceSerif4', sans-serif;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.input-error {
+  width: 100%;
+  margin: 0;
+  padding: 11px;
+  box-sizing: border-box;
+  border: 1px solid #fc8181 !important;
+}
+
+.partner-input {
+  width: 100%;
+  margin: 0;
+  padding: 11px;
+  box-sizing: border-box;
+}
+.error {
+  color: #fc8181;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+}
+/* Partner styles */
+
+
+
+/* Account styles */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Card */
+.modal-card {
+  border-radius: 30px;
+  background: #FCDDB0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 1055px;
+  height: 531px;
+  flex-shrink: 0;
+}
+
+.modal-card h2 {
+  margin-top: 0;
+}
+
+
+.close-button:hover {
+  background-color: transparent; /* Optional: Add hover background */
+  color: grey; /* Example hover effect */
+}
+
+.accountHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Blur Effect */
+.containerHeader + div {
+  transition: filter 0.3s;
+}
+
+.containerHeader + div[style*="blur"] {
+  filter: blur(50px);
+}
+
+.accountTitle{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 115px;
+  margin-top: 46px;
+}
+
+.close-button{
+  margin-top: 46px;
+  margin-right: 105px;
+}
+
+.sign-in-button {
+  margin-top: 90px;
+  width: 405px;
+  height: 87px;
+  flex-shrink: 0;
+  background-color: rgb(233, 119, 119);
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 8px;
+}
+
+.sign-in-button:hover {
+  background-color: rgb(255, 159, 159);
+}
+
+.create-account-button{
+  margin-top: 90px;
+  width: 405px;
+  height: 87px;
+  flex-shrink: 0;
+  background-color: #FFAD84;
+  color: black;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 8px;
+}
+
+.create-account-button:hover{
+  background-color: #FFC4A3;
+}
+
+.accountLink{
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: flex-start;
+  gap: 34px; 
+}
+
+.account-help-button{
+  margin-top: 72px;
+  height: 33px;
+  flex-shrink: 0;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border: none;
+  font-family: Antic;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 158px;
+}
+
+.account-partner-button{
+  height: 33px;
+  flex-shrink: 0;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border: none;
+  font-family: Antic;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 158px;
+}
+
+.account-help-button-content{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-partner-button-content{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Account styles */
+
+/* Login styles */
+.Login_container{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.Login_rectangle{
+  border-radius: 30px;
+  background: #FCDDB0;
+  width: 480px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.Loginheader{
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 40px;
+  margin-top: 18px;
+}
+
+
+.login-social-button {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center icon and text vertically */
+  justify-content: start; /* Center the button's content */
+  border: 1px solid #000;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 0 15px;
+  cursor: pointer;
+  margin-left: 66px;
+}
+
+.social_login{
+  display: grid;
+  gap: 28px;
+}
+
+.or_line{
+  display: flex; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 63px;
+  margin-bottom: 20px;
+}
+
+.or_left{
+  width: 166px;
+  height: 0.8px;
+  background: #000;
+  border: none;
+}
+
+.or_right{
+  width: 166px;
+  height: 0.8px;
+  background: #000;
+  border: none;
+}
+
+.or_text{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login-text{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login-input {
+  width: 350px;
+  height: 32px;
+  padding-left: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFF;
+}
+
+.login-button{
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #E99F9F;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.login-button-text{
+  color: #FFF;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login-form-item{
+  text-align: left;
+  width: 350px;
+}
+
+.loginform{
+  display: grid;
+  gap: 25px;
+  place-items: center;
+}
+
+
+.nregi_line{
+  display: flex; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 18px;
+}
+
+.nregi_left{
+  width: 118px;
+  height: 0.8px;
+  background: #000;
+  border: none;
+}
+
+.nregi_right{
+  width: 118px;
+  height: 0.8px;
+  background: #000;
+  border: none;
+}
+
+.nregi_text{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login-create-account-div{
+  display: grid;
+  place-items: center;
+}
+
+
+.login-create-account-button{
+  margin-top: 28px;
+  margin-bottom: 14px;
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.login-create-account-text{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Login styles */
+
+/* choose card styles */
+.choosecardtitle{
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+
+.choosecardTitle{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 48px;
+}
+
+.choosecardtextfont{
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 37px;
+  margin-bottom: 0px;
+}
+
+.choosecardcarddiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 62px;
+}
+
+.pubcardFFB6B9{
+  width: 611px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: linear-gradient(180deg, #FFB6B9 0%, #FAE3D9 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 84px;
+}
+
+.pubcardBBDED6{
+  width: 611px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: linear-gradient(180deg, #BBDED6 0%, #FAE3D9 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 84px;
+}
+
+.selected-card {
+  border-color: green; /* Green border when selected */
+  border-width: 3px;
+}
+
+.cardtitle{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 54px;
+  margin-top: 11px;
+}
+.cardtext{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardbody{
+  display: flex;
+}
+
+.cardbodysvgdiv{
+  margin-left: 38px;
+  margin-top: 11px;
+}
+
+.cardbodytextdiv{
+  display: grid;
+  gap: 24px;
+  margin-left: 44px;
+  margin-top: 32px;
+}
+
+.choosecardconfirmbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 107px;
+}
+
+.confirm-choose-card-button{
+  width: 134px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+
+.confirm-choose-card-text{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.cardOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.zeromargin{
+  margin: 0px !important;
+}
+
+.cardtitlediv{
+  display: flex;
+  gap: 341px;
+}
+
+.cardtitleeditsvgdiv{
+  margin-top: 14px;
+}
+
+.inviteme{
+  display: flex;
+}
+
+.select{
+  background-color: transparent;
+  border: 0;
+}
+
+.optiontext{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* choose card styles */
+
+/* wallet styles */
+.Wallet_div{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.Wallet_rectangle{
+  width: 2195px;
+  height: 1110px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #FCDDB0;
+}
+
+.Wallet_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Wallet_header_title{
+  margin-top: 70px;
+  margin-left: 84px;
+  width: 158px;
+  height: 46px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Wallet_header_svg_div{
+  display: flex;
+  margin-top: 55px;
+  margin-right: 55px;
+  height: auto;
+}
+
+.add_friend_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 611px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px dashed #000;
+  background: rgba(128, 128, 128, 0.21);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.add_friend_card_text{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add_friend_rectangle{
+  width: 840px;
+  height: 481px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #E97777;
+  box-sizing: border-box; /* Include padding and border in width/height */
+  overflow: hidden;
+}
+
+.add_friend_content{
+  margin-top: 42px;
+  margin-left: 43px;
+  gap: 0px;
+}
+
+.add_friend_title{
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.add_friend_instruction_div{
+  margin-top: 21px;
+}
+
+.add_friend_instruction{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.add_friend_input_div{
+  margin-top: 12px;
+  display: flex;
+}
+
+.add_friend_input{
+  width: 557px;
+  height: 34px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: #FFF;
+}
+
+.add_friend_button{
+  width: 134px ;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.Wallet_cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  height: 850px;
+  overflow-y: auto;
+  gap: 71px;
+}
+
+.logincard{
+  margin: 0px;
+}
+
+.searchInput{
+  width: 600px;
+  height: 50px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: #FFF;
+}
+
+.clickable-svg {
+  cursor: pointer;
+}
+
+.response_to_invites{
+  margin-top: 22px;
+}
+
+.response_card{
+  width: 378px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FCDDB0;
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between; /* Space between start and end sections */
+  align-items: center; /* Vertically align items */
+}
+
+.Response_card_info{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.Response_card_info_div{
+  margin-top: 6px;
+}
+
+.Response_card_svg_div{
+  margin-left: 78px;
+}
+
+.response_card_start{
+  display: flex;
+  align-items: center; /* Vertically align the SVG and text */
+  gap: 16px; /* Add spacing between SVG and text */
+}
+
+.response_card_end {
+  display: flex;
+  gap: 8px; /* Add spacing between the two SVGs at the end */
+  margin-right: 8px;
+}
+
+.accepted{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 113px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #78A75A;
+  margin-right: 8px;
+}
+
+.declined{
+  width: 113px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #E4273E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.accept_text{
+  color: #FFF;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notification-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.notification-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.notification-counter {
+  position: absolute;
+  top: 0px; /* Position it above the top-left corner */
+  left: -10px;
+  background-color: rgba(212, 19, 13, 1); /* Red circle */
+  color: #fff;
+  border-radius: 50%; /* Circle shape */
+  padding: 3px 5px; /* Adjust padding for better visibility */
+  font-size: 12px; /* Adjust font size */
+  font-family: Verdana, sans-serif;
+  display: inline-block;
+  min-width: 16px;
+  text-align: center;
+}
+
+.notification-container {
+  list-style-type: none; /* Removes the default bullet point */
+}
+
+
+/* wallet styles */
+
+/* live map styles */
+
+.user_marker{
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #FFB6B9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.map_container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure the container takes up the full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensure there is no overflow or extra space */
+}
+
+
+.map_user_container{
+  position: absolute;
+  top: 50px; /* Distance from the top of the container */
+  left: 625px; /* Distance from the left of the container */
+  min-width: 342px;
+  height: 820px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(217, 217, 217, 0.40);
+}
+
+.map_user_profile{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.map_user_card{
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FCDDB0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.map_user_svg_div{
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.map_user_name{
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chat_input_div{
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.chat_input{
+  width: 307px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: rgba(217, 217, 217, 0.50);
+}
+
+.chat_message{
+  display: flex;
+  width: 307px;
+  min-height: 70px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: rgba(120, 167, 90, 0.50);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 17px;
+}
+
+.map_chat{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Horizontally center the items */
+  height: 100vh;          /* Full viewport height */
+}
+
+.normal_text{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chat_messages_svg_div{
+  display: grid;
+  place-items: center;
+  max-height: 71px;
+  margin-left: 9px;
+}
+
+.chat_message_text{
+  margin: 0px;
+  margin-right: 9px;
+  margin-bottom: 20px;
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-wrap: break-word; /* Break long words if necessary */
+  word-break: break-word; /* Ensure long strings wrap properly */
+  white-space: pre-wrap; /* Preserve whitespace and ensure wrapping */
+
+}
+
+.chat_messages_container{
+  overflow: scroll;
+  max-height: 650px;
+  scrollbar-width: none; /* Firefox: Hide scrollbar */
+}
+
+.chat_messages_container::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari: Hide scrollbar */
+}
+
+.message_time{
+  margin-left: 190px;
+  color: #000;
+  font-family: Antic;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute; /* Position relative to the message container */
+  bottom: 5px; /* Distance from the bottom */
+  right: 5px;
+}
+
+.chat_message_div{
+  margin-left: 19px;
+  position: relative;
+  min-width: 200px;
+}
+
+
+.vendor_manu_container{
+  position: absolute;
+  top: 50px; /* Distance from the top of the container */
+  left: 60px; /* Distance from the left of the container */
+  width: 529px;
+  height: 820px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #FCDDB0;
+}
+
+.vendor_manu_title{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.vendor_manu_headerTitleSvgDiv{
+  margin: 0px;
+}
+
+
+.title_div{
+  display: flex;
+  align-items: center;
+}
+
+.vendor_manu_instruction{
+  margin: 0px;
+  margin-left: 40px;
+}
+
+.vendor_manu_div{
+  margin-top: 20px;
+  margin-left: 28px;
+  min-height: 652px;
+}
+
+.vendor_list_div {
+  margin-top: 22px;
+  max-height: 615px;
+  width: 500px;
+  overflow: auto; /* Show scrollbar only when needed */
+  scrollbar-width: thin; /* Use thin scrollbars for Firefox */
+  scrollbar-color: rgba(128, 128, 128, 0.5) rgba(0, 0, 0, 0.1); /* Thumb and track colors for Firefox */
+  white-space: nowrap; /* Prevent wrapping of child elements */
+  margin: 0px;
+}
+
+.vendor_list_div::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.vendor_list_div::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.5); /* Grey-transparent thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.vendor_list_div::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Lighter track background */
+}
+
+
+
+
+.vendor_card{
+  display: flex;
+  align-items: center;
+  width: 474px;
+  height: 101px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: #FCDDB0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 14px;
+}
+
+.vendor_texts{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.vendor_card_text{
+  width: 250px;
+}
+
+.review_score_div{
+  display: flex;
+  flex-direction: column;
+}
+
+.vendor_card_details_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  background: #FCDDB0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  width: 474px;
+  height: 373px;
+  flex-shrink: 0;
+  overflow: auto; /* Show scrollbar only when needed */
+  scrollbar-width: none;
+  white-space: nowrap; /* Prevent wrapping of child elements */
+}
+
+.vendor_card_details_div::-webkit-scrollbar {
+  display: none;
+}
+
+.product_card_div{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  min-height: 71px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: #FCDDB0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product_texts{
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.product_description{
+  color: #000;
+  font-family: Antic;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.product_card_text_div{
+  width: 300px; /* Set a fixed width for demonstration */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: hidden; /* Prevents horizontal scroll */
+  text-overflow: ellipsis; /* Optional: Adds ellipsis for truncated text */
+  padding: 10px; /* Optional: Padding inside the div */
+}
+
+
+.proposal_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 162px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 183px;
+  cursor: pointer;
+}
+
+.proposal_button_text{
+  margin: 0px;
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.proposed_card{
+  display: flex;
+  position: absolute;
+  top: 900px; /* Distance from the top of the container */
+  left: 60px; /* Distance from the left of the container */
+  width: 525px;
+  height: 71px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: #FCDDB0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.proposal_text{
+  margin: 0px;
+  margin-top: 5px;
+  color: #000;
+  font-family: Antic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.proposal_text_div{
+  min-width: 310px;
+}
+
+.book_button{
+  cursor: pointer;
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 121px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFAD84;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.proposal_cancel_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 183px;
+  width: 162px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: rgba(128, 128, 128, 0.21);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.proposal_button_text{
+  color: #000;
+  font-family: Antic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* live map styles */ 
