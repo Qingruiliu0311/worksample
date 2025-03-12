@@ -1,0 +1,1 @@
+from User_management.authentication_extensions import CustomJWTAuthenticationExtension
